@@ -1,0 +1,26 @@
+{
+    "to" : ["marshall@shopback.com"],
+    "1544" : {
+        "name" : "test_offer",
+        "from" : "trinity@yahoo-inc.com",
+        "filename_regex" : ".*(validation|shopback).*.(xls|xls|csv)",
+        "sheet_definition" : "訂單日期 == 訂單日期",
+        "column_definition" : [
+            {
+                "old" : "old1",
+                "new" : "new1",
+                "applier" : null
+            },
+            {
+                "old" : "old2",
+                "new" : "new2",
+                "applier" : null
+            },
+            {
+                "old" : "old3",
+                "new" : "new3",
+                "applier" : "lambda x : x + 1"
+            }
+        ]
+    }
+}
